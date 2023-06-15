@@ -8,7 +8,10 @@ const db = new sqlite3.Database('database.db');
 db.run(`CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
-    email TEXT
+    email TEXT,
+    passwrod TEXT
   )`);
+
+
   
 module.exports=db;
